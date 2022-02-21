@@ -115,7 +115,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-4] RUNNING in chrome - /test/specs/api-platform/version/version-carry-forward.spec.js
 [log] [0-4] [log] (node:1645) DeprecationWarning: "Runner(suite: Suite, delay: boolean)" is deprecated. Use "Runner(suite: Suite, {delay: boolean})" instead.
 [log] [0-4] (Use `node --trace-deprecation ...` to show where the warning was created)
-[log] [0-1] [success] user signup completed. created user id: 402239, name: test-user-2c5576d0-c7db-46cb-aa59-07a1f229125d in the team where admin username is:  pm-automation-tests-stage-enterprise13
 [log] [0-3] [log]
 [log] [0-3] **************************
 [log] [0-3]
@@ -155,7 +154,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-5] RUNNING in chrome - /test/specs/client-foundation/monaco-editor.spec.js
 [log] [0-5] [log] (node:1939) DeprecationWarning: "Runner(suite: Suite, delay: boolean)" is deprecated. Use "Runner(suite: Suite, {delay: boolean})" instead.
 [log] [0-5] (Use `node --trace-deprecation ...` to show where the warning was created)
-[log] [0-4] [success] user signup completed. created user id: 402244, name: test-user-2c3c0d66-aef7-47ac-a9f5-31bbe1796d53 in the team where admin username is:  pm-automation-tests-stage-enterprise09
 [log] [0-5] [log]
 [log] [0-5] **************************
 [log] [0-5]
@@ -201,7 +199,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-1] [success] Click success for - .workspace-switcher__name
 [log] [0-1] [success] Add text as - T on selector -  input[placeholder="Search workspaces"]
 [log] [0-1] [success] Click success for - //*[contains(@class,'workspace-switcher__selector')]//*[contains(text(),'Team Workspace-c5abf0')]
-[log] [0-6] [success] user signup completed. created user id: 402250, name: test-user-a4d11c66-4b7e-4d29-85ad-f409a5e6132e in the team where admin username is:  pm-automation-tests-stage-enterprise03
 [log] [0-6] [success] Click success for - div[class*="content-left-btn-signin"]
 [log] [0-1] [success] Click success for - //div[contains(text(),"APIs")]
 [log] [0-1] [log]
@@ -227,37 +224,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-1] [start] [current test]: User is able to validate OpenAPI 3 schema in YAML format
 [log] [0-1] [info] [file]: /home/circleci/project/test/specs/api-platform/creation/api-creation.spec.js
 [log] [0-1]
-[log] [0-1] [success] Click success for - .api-editor-tabs-wrapper .tab
-[log] [0-1] [info] Fetched schema: openapi: 3.0.0
-[log] [0-1] info:
-[log] [0-1]   version: '1.0'
-[log] [0-1]   title: 'openapi_3_f6efc0'
-[log] [0-1]   license:
-[log] [0-1]     name: MIT
-[log] [0-1] servers:
-[log] [0-1]   - url: 'localhost:3000'
-[log] [0-1] paths:
-[log] [0-1]   /user:
-[log] [0-1]     get:
-[log] [0-1]       summary: 'Sample endpoint: Returns details about a particular user'
-[log] [0-1]       operationId: listUser
-[log] [0-1]       tags:
-[log] [0-1]         - user
-[log] [0-1]       parameters:
-[log] [0-1]         - name: id
-[log] [0-1]           in: query
-[log] [0-1]           description: ID of the user
-[log] [0-1]           required: true
-[log] [0-1]           schema:
-[log] [0-1]             type: integer
-[log] [0-1]             format: int32
-[log] [0-1]       responses:
-[log] [0-1]         '200':
-[log] [0-1]           description: 'Sample response: Details about a user by ID'
-[log] [0-1]           headers:
-[log] [0-1]             x-next:
-[log] [0-1] [log] Performance-Total: flushing to file: /home/circleci/project/test-reports/performance-results/performance-log.txt
-[log] [0-1] [log]
 [log] [0-1] -------------------------------------------------------
 [log] [0-1]
 [log] [0-1] [start] [current test]: User is able to delete OpenAPI 3 schema in YAML format
@@ -296,35 +262,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-4] [success] Expected window found name:  Postman API Platform
 [log] [0-1] [success] Click success for - .api-editor-tabs-wrapper .tab
 [log] [0-1] [info] Fetched schema: swagger: '2.0'
-[log] [0-1] info:
-[log] [0-1]   version: '1.0'
-[log] [0-1]   title: 'openapi_2_ba5f02'
-[log] [0-1]   description: Enter description about your API here
-[log] [0-1]   contact:
-[log] [0-1]     name: Your name
-[log] [0-1] host: 'localhost:3000'
-[log] [0-1] basePath: /api
-[log] [0-1] schemes:
-[log] [0-1]   - http
-[log] [0-1] consumes:
-[log] [0-1]   - application/json
-[log] [0-1] produces:
-[log] [0-1]   - application/json
-[log] [0-1] paths:
-[log] [0-1]   /user/{userId}:
-[log] [0-1]     get:
-[log] [0-1]       description: 'Sample endpoint: Returns details about a particular user'
-[log] [0-1]       produces:
-[log] [0-1]         - application/json
-[log] [0-1]       parameters:
-[log] [0-1]         - in: path
-[log] [0-1]           name: userId
-[log] [0-1]           type: integer
-[log] [0-1]           required: true
-[log] [0-1]           description: ID of the user
-[log] [0-1]       responses:
-[log] [0-1] [log] Performance-Total: flushing to file: /home/circleci/project/test-reports/performance-results/performance-log.txt
-[log] [0-1] [log]
 [log] [0-1] -------------------------------------------------------
 [log] [0-1]
 [log] [0-1] [start] [current test]: User is able to delete OpenAPI 2 schema in YAML format
@@ -374,8 +311,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-4] [success] Click success for - #entity-monitors .api-entity-header__add-options
 [log] [0-4] [success] Click success for - .dropdown-menu-item--add_existing
 [log] [0-6] [success] Click success for - .import-collection-button
-[log] [0-6] [info] Uploading the file
-[log] [0-6] [success] Set text as - /home/circleci/project/test/test-data/collaboration/collection/collaboration-e2e-testing.json on selector -  .import-by-file-container .drop-files-dropzone-container input
 [log] [0-6] [info] collection entity uploaded
 [log] [0-1] [log] Performance-Total: flushing to file: /home/circleci/project/test-reports/performance-results/performance-log.txt
 [log] [0-1] [log]
@@ -388,38 +323,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-1] [success] Click success for - .api-editor-tabs-wrapper .tab
 [log] [0-4] [success] Click success for - .aether-dropdown__menu-list
 [log] [0-4] [success] Click success for - .add-entity__add-button
-[log] [0-1] [info] Fetched schema: apiVersion: '1.0'
-[log] [0-1] swaggerVersion: '1.2'
-[log] [0-1] basePath: 'localhost:3000'
-[log] [0-1] resourcePath: /api
-[log] [0-1] produces:
-[log] [0-1]   - application/json
-[log] [0-1] authorizations: {}
-[log] [0-1] apis:
-[log] [0-1]   - path: '/user/{userID}'
-[log] [0-1]     operations:
-[log] [0-1]       - method: GET
-[log] [0-1]         summary: Returns details about a particular user
-[log] [0-1]         nickname: getUserById
-[log] [0-1]         authorizations: {}
-[log] [0-1]         parameters:
-[log] [0-1]           - name: userId
-[log] [0-1]             description: ID of the user
-[log] [0-1]             required: true
-[log] [0-1]             type: integer
-[log] [0-1]             paramType: path
-[log] [0-1]         responseMessages:
-[log] [0-1]           - code: 400
-[log] [0-1]             message: Invalid ID supplied
-[log] [0-1]           - code: 404
-[log] [0-1]             message: Order not found
-[log] [0-1] models:
-[log] [0-1]   User:
-[log] [0-1]     id: User
-[log] [0-1]     properties:
-[log] [0-1]       id:
-[log] [0-1] [log] Performance-Total: flushing to file: /home/circleci/project/test-reports/performance-results/performance-log.txt
-[log] [0-1] [log]
 [log] [0-1] -------------------------------------------------------
 [log] [0-1]
 [log] [0-1] [start] [current test]: User is able to delete OpenAPI 1 schema in YAML format
@@ -500,36 +403,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-1]
 [log] [0-6] [log] Performance-Total: flushing to file: /home/circleci/project/test-reports/performance-results/performance-log.txt
 [log] [0-1] [success] Click success for - .api-editor-tabs-wrapper .tab
-[log] [0-1] [info] Fetched schema: {
-[log] [0-1]   "openapi": "3.0.0",
-[log] [0-1]   "info": {
-[log] [0-1]     "version": "1.0",
-[log] [0-1]     "title": "openapi_3_8f0a4c",
-[log] [0-1]     "license": {
-[log] [0-1]       "name": "MIT"
-[log] [0-1]     }
-[log] [0-1]   },
-[log] [0-1]   "servers": [
-[log] [0-1]     {
-[log] [0-1]       "url": "localhost:3000"
-[log] [0-1]     }
-[log] [0-1]   ],
-[log] [0-1]   "paths": {
-[log] [0-1]     "/user": {
-[log] [0-1]       "get": {
-[log] [0-1]         "summary": "Details about a user",
-[log] [0-1]         "operationId": "listUser",
-[log] [0-1]         "tags": [
-[log] [0-1]           "user"
-[log] [0-1]         ],
-[log] [0-1]         "parameters": [
-[log] [0-1]           {
-[log] [0-1]             "name": "id",
-[log] [0-1]             "in": "query",
-[log] [0-1]             "description": "ID of the user",
-[log] [0-1]             "required": true,
-[log] [0-1] [log] Performance-Total: flushing to file: /home/circleci/project/test-reports/performance-results/performance-log.txt
-[log] [0-1] [log]
 [log] [0-1] -------------------------------------------------------
 [log] [0-1]
 [log] [0-1] [start] [current test]: User is able to delete OpenAPI 3 schema in JSON format
@@ -546,7 +419,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-6] suite End - Workspace Create Annotations Tests
 [log] [0-6]
 [log] [0-6] [info] temp users to be deleted: 1
-[log] [0-6] [info] temp user deletion initiated for id: 402250, Team name: pm-automation-tests-stage-enterprise03, Team id: 6043
 [log] [0-6] [log] Performance-Total results:
 [log] [0-6] [log] ┌─────────┐
 [log] [0-6] │ (index) │
@@ -596,36 +468,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-4] [success] Click success for - .toast-dismiss .toast-close, .pm-toast-dismiss, .agent-onboarding-modal-close-button
 [log] [0-1] [success] Click success for - .api-editor-tabs-wrapper .tab
 [log] [0-4] [success] Click success for - .modal-header-close-button-wrapper
-[log] [0-1] [info] Fetched schema: {
-[log] [0-1]   "swagger": "2.0",
-[log] [0-1]   "info": {
-[log] [0-1]     "version": "1.0",
-[log] [0-1]     "title": "openapi_2_e6720d",
-[log] [0-1]     "description": "Enter description about your API here",
-[log] [0-1]     "contact": {
-[log] [0-1]       "name": "Your name"
-[log] [0-1]     }
-[log] [0-1]   },
-[log] [0-1]   "host": "localhost:3000",
-[log] [0-1]   "basePath": "/api",
-[log] [0-1]   "schemes": [
-[log] [0-1]     "http"
-[log] [0-1]   ],
-[log] [0-1]   "consumes": [
-[log] [0-1]     "application/json"
-[log] [0-1]   ],
-[log] [0-1]   "produces": [
-[log] [0-1]     "application/json"
-[log] [0-1]   ],
-[log] [0-1]   "paths": {
-[log] [0-1]     "/user/{userId}": {
-[log] [0-1]       "get": {
-[log] [0-1]         "description": "Sample endpoint: Returns details about a particul
-[log] [0-1]         "produces": [
-[log] [0-1]           "application/json"
-[log] [0-1]         ],
-[log] [0-1] [log] Performance-Total: flushing to file: /home/circleci/project/test-reports/performance-results/performance-log.txt
-[log] [0-1] [log]
 [log] [0-1] -------------------------------------------------------
 [log] [0-1]
 [log] [0-1] [start] [current test]: User is able to delete OpenAPI 2 schema in JSON format
@@ -642,7 +484,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-7]
 [log] [0-7] [debug] Successfully retrieved 20 items from DDB
 [log] [0-1] [success] Click success for - .api-dev-delete-modal__action-delete
-[log] [0-7] [success] free user signup completed. created user id: 402261, email: freeUser-b5033579-6fa7-4280-85bc-f48978774ec2@postman.com
 [log] [0-7] [success] Click success for - div[class*="content-left-btn-signin"]
 [log] [0-1] [success] Click success for - .toast-dismiss .toast-close, .pm-toast-dismiss, .agent-onboarding-modal-close-button
 [log] [0-1] [log] Performance-Total: flushing to file: /home/circleci/project/test-reports/performance-results/performance-log.txt
@@ -668,40 +509,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-1]
 [log] [0-1] [start] [current test]: User is able to validate OpenAPI 1 schema in JSON format
 [log] [0-1] [info] [file]: /home/circleci/project/test/specs/api-platform/creation/api-creation.spec.js
-[log] [0-1]
-[log] [0-1] [success] Click success for - .api-editor-tabs-wrapper .tab
-[log] [0-1] [info] Fetched schema: {
-[log] [0-1]   "apiVersion": "1.0",
-[log] [0-1]   "swaggerVersion": "1.2",
-[log] [0-1]   "basePath": "localhost:3000",
-[log] [0-1]   "resourcePath": "/api",
-[log] [0-1]   "produces": [
-[log] [0-1]     "application/json"
-[log] [0-1]   ],
-[log] [0-1]   "authorizations": {},
-[log] [0-1]   "apis": [
-[log] [0-1]     {
-[log] [0-1]       "path": "/user/{userID}",
-[log] [0-1]       "operations": [
-[log] [0-1]         {
-[log] [0-1]           "method": "GET",
-[log] [0-1]           "summary": "Returns details about a particular user",
-[log] [0-1]           "nickname": "getUserById",
-[log] [0-1]           "authorizations": {},
-[log] [0-1]           "parameters": [
-[log] [0-1]             {
-[log] [0-1]               "name": "userId",
-[log] [0-1]               "description": "ID of the user",
-[log] [0-1]               "required": true,
-[log] [0-1]               "type": "integer",
-[log] [0-1]               "paramType": "path"
-[log] [0-1]             }
-[log] [0-1]           ],
-[log] [0-1]           "responseMessages": [
-[log] [0-1]             {
-[log] [0-1]               "code": 400,
-[log] [0-1] [log] Performance-Total: flushing to file: /home/circleci/project/test-reports/performance-results/performance-log.txt
-[log] [0-1] [log]
 [log] [0-1] -------------------------------------------------------
 [log] [0-1]
 [log] [0-1] [start] [current test]: User is able to delete OpenAPI 1 schema in JSON format
@@ -720,7 +527,6 @@ Execution of 29 workers started at 2022-02-17T22:16:35.070Z
 [log] [0-1] suite End - Test API schema generation
 [log] [0-1]
 [log] [0-1] [info] temp users to be deleted: 1
-[log] [0-1] [info] temp user deletion initiated for id: 402239, Team name: pm-automation-tests-stage-enterprise13, Team id: 6298
 [log] [0-1] [log] Performance-Total results:
 [log] [0-1] [log] ┌─────────┐
 [log] [0-1] │ (index) │
@@ -763,7 +569,6 @@ Error: element (".requester-builder-header .requester-tabs-wrapper .requester-ta
 [log] [0-4] suite End - API Version carry forward Tests
 [log] [0-4]
 [log] [0-4] [info] temp users to be deleted: 1
-[log] [0-4] [info] temp user deletion initiated for id: 402244, Team name: pm-automation-tests-stage-enterprise09, Team id: 6242
 [log] [0-4] [log] Performance-Total *****: readFile failed: Error: ENOENT: no such file or directory, open 'performance-log.txt'
 [log] [0-4] [log] Performance-Total results:
 [log] [0-4] [log] ┌─────────┐
@@ -814,7 +619,6 @@ Error: element (".requester-builder-header .requester-tabs-wrapper .requester-ta
 [log] [0-9] RUNNING in chrome - /test/specs/collaboration/workspace-share-element-tests/workspace-share-element-personal.spec.js
 [log] [0-9] [log] (node:4671) DeprecationWarning: "Runner(suite: Suite, delay: boolean)" is deprecated. Use "Runner(suite: Suite, {delay: boolean})" instead.
 [log] [0-9] (Use `node --trace-deprecation ...` to show where the warning was created)
-[log] [0-8] [success] user signup completed. created user id: 402268, name: test-user-9022bbb9-7265-4db2-b018-f006a641a87e in the team where admin username is:  pm-automation-tests-stage-enterprise06
 [log] [0-7] [success] Click success for - .ws-header-info-action-icons-container__settings-btn
 [log] [0-7] [success] Click success for - .aether-dropdown__value-container
 [log] [0-7] [log] Performance-Total: flushing to file: /home/circleci/project/test-reports/performance-results/performance-log.txt
@@ -852,7 +656,6 @@ Error: element (".requester-builder-header .requester-tabs-wrapper .requester-ta
 [log] [0-10] [info] Electron port: 35197
 [log] [0-10] [info] Electron arguments: --window-size=1920,1080 --no-sandbox --disable-infobars --disable-gpu --host=localhost --disable-dev-shm-usage --port=35197
 [log] [0-10] [info] Browser: electron
-[log] [0-8] [success] user signup completed. created user id: 402273, name: test-user-5a53eedd-d257-4beb-8292-cd972ff46f8a in the team where admin username is:  pm-automation-tests-stage-enterprise06
 [log] [0-10] [info] Test tags found: is:app
 [log] [0-10] [info] Environment: stage
 [log] [0-10] [info] Platform Used: CI
@@ -861,17 +664,14 @@ Error: element (".requester-builder-header .requester-tabs-wrapper .requester-ta
 [log] [0-10] [log] (node:4817) DeprecationWarning: "Runner(suite: Suite, delay: boolean)" is deprecated. Use "Runner(suite: Suite, {delay: boolean})" instead.
 [log] [0-10] (Use `node --trace-deprecation ...` to show where the warning was created)
 [log] [0-8] [success] Click success for - div[class*="content-left-btn-signin"]
-[log] [0-9] [success] user signup completed. created user id: 402275, name: test-user-9c9f36a5-2f50-4ea1-bbf1-eefd6184f0ed in the team where admin username is:  pm-automation-tests-stage-enterprise01
-[log] [0-10] [log]
+\[log] [0-10] [log]
 [log] [0-10] **************************
 [log] [0-10]
 [log] [0-10] [start] [current test suite]: Documentation in context bar
 [log] [0-10] [info] [suite file]: /home/circleci/project/test/specs/documentation/contextbar-documentation.spec.js
 [log] [0-10]
 [log] [0-10] [debug] Successfully retrieved 20 items from DDB
-[log] [0-10] [success] free user signup completed. created user id: 402277, email: freeUser-39f34bff-7d2e-49b4-9bcc-9ab52eddacb9@postman.com
 [log] [0-10] [success] Click success for - div[class*="content-left-btn-signin"]
-[log] [0-9] [success] user signup completed. created user id: 402276, name: test-user-d42fbb6a-27da-4647-9ec8-876d6f2cacd4 in the team where admin username is:  pm-automation-tests-stage-enterprise01
 [log] [0-9] [success] Click success for - div[class*="content-left-btn-signin"]
 [log] [0-8] [info] title found: Postman API Platform
 [log] [0-8] [success] Expected window found name:  Postman API Platform
@@ -977,7 +777,6 @@ Error: workspace Team-WS-Name-dd5426 never loaded
 [log] [0-8] suite End - Workspace Remove Member Tests
 [log] [0-8]
 [log] [0-8] [info] temp users to be deleted: 2
-[log] [0-8] [info] temp user deletion initiated for id: 402268, Team name: pm-automation-tests-stage-enterprise06, Team id: 6195
 [log] [0-8] [log] Performance-Total *****: readFile failed: Error: ENOENT: no such file or directory, open 'performance-log.txt'
 [log] [0-8] [log] Performance-Total results:
 [log] [0-8] [log] ┌─────────┐
@@ -1018,7 +817,6 @@ Error: workspace Team-WS-Name-dd5426 never loaded
 [log] [0-10] [success] Click success for - .description-preview--editable
 [log] [0-10] [success] Click success for - .description-preview__edit-icon
 [log] [0-8] [success] temp user deletion completed
-[log] [0-8] [info] temp user deletion initiated for id: 402273, Team name: pm-automation-tests-stage-enterprise06, Team id: 6195
 [log] [0-8] [debug] Successfully retrieved 1 items from DDB
 [log] [0-8] [success] temp user deletion completed
 [log] [0-8] RETRYING in chrome - /test/specs/collaboration/workspace-invite-tests/workspace-remove-members.spec.js
@@ -1104,7 +902,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-9] suite End - Workspace Share Element Personal User Tests
 [log] [0-9]
 [log] [0-9] [info] temp users to be deleted: 2
-[log] [0-9] [info] temp user deletion initiated for id: 402275, Team name: pm-automation-tests-stage-enterprise01, Team id: 5995
 [log] [0-9] [log] Performance-Total *****: readFile failed: Error: ENOENT: no such file or directory, open 'performance-log.txt'
 [log] [0-9] [log] Performance-Total results:
 [log] [0-9] [log] ┌─────────┐
@@ -1137,7 +934,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-12] ├─────────┤
 [log] [0-12] └─────────┘
 [log] [0-9] [success] temp user deletion completed
-[log] [0-9] [info] temp user deletion initiated for id: 402276, Team name: pm-automation-tests-stage-enterprise01, Team id: 5995
 [log] [0-9] [debug] Successfully retrieved 1 items from DDB
 [log] [0-12] PASSED in chrome - /test/specs/iam/public-profile.spec.js
 [log] [0-13] [info] Browser: electron
@@ -1188,7 +984,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-15] RUNNING in chrome - /test/specs/integrations/keen-integration.spec.js
 [log] [0-15] [log] (node:6979) DeprecationWarning: "Runner(suite: Suite, delay: boolean)" is deprecated. Use "Runner(suite: Suite, {delay: boolean})" instead.
 [log] [0-15] (Use `node --trace-deprecation ...` to show where the warning was created)
-[log] [0-13] [success] user signup completed. created user id: 402292, name: test-user-f90c1161-39af-4588-a1eb-513ad014c400 in the team where admin username is:  pm-automation-tests-stage-enterprise13
 [log] [0-13] [success] Click success for - div[class*="content-left-btn-signin"]
 [log] [0-15] [log]
 [log] [0-15] **************************
@@ -1198,9 +993,7 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-15]
 [log] [0-15] [info] user signup request initiated
 [log] [0-15] [debug] Successfully retrieved 20 items from DDB
-[log] [0-14] [success] user signup completed. created user id: 402293, name: test-user-710250b7-63d3-4922-a248-42c33632fba7 in the team where admin username is:  pm-automation-tests-stage
-[log] [0-14] [success] Click success for - div[class*="content-left-btn-signin"]
-[log] [0-15] [success] user signup completed. created user id: 402294, name: test-user-44881726-26a9-472c-9744-8ea33682f977 in the team where admin username is:  pm-automation-tests-stage-enterprise06
+[[log] [0-14] [success] Click success for - div[class*="content-left-btn-signin"]
 [log] [0-15] [success] Click success for - div[class*="content-left-btn-signin"]
 [log] [0-13] [info] title found: Postman API Platform
 [log] [0-13] [success] Expected window found name:  Postman API Platform
@@ -1215,8 +1008,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-13] [info] [file]: /home/circleci/project/test/specs/importers/importers/importers-integrations.spec.js
 [log] [0-13]
 [log] [0-13] [success] Click success for - .import-collection-button
-[log] [0-13] [info] Uploading the file
-[log] [0-13] [success] Set text as - /home/circleci/project/test/test-data/integrations/PetstoreTest.postman_collection.json on selector -  .import-by-file-container .drop-files-dropzone-container input
 [log] [0-13] [info] collection entity uploaded
 [log] [0-14] [info] title found: Postman API Platform
 [log] [0-14] [success] Expected window found name:  Postman API Platform
@@ -1236,8 +1027,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-14] [success] Click success for - .workspace-switcher__name
 [log] [0-13] [success] Click success for - .tabs__api
 [log] [0-13] [success] Click success for - .import-collection-button
-[log] [0-13] [info] Uploading the file
-[log] [0-13] [success] Set text as - /home/circleci/project/test/test-data/integrations/schema/WADL/wadl.xml on selector -  .import-by-file-container .drop-files-dropzone-container input
 [log] [0-14] [success] Add text as - T on selector -  input[placeholder="Search workspaces"]
 [log] [0-14] [success] Click success for - //*[contains(@class,'workspace-switcher__selector')]//*[contains(text(),'Test Integration Workspace-9e1a85')]
 [log] [0-13] [info] collection entity uploaded
@@ -1281,8 +1070,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-13]
 [log] [0-13] [success] Click success for - .tabs__api
 [log] [0-13] [success] Click success for - .import-collection-button
-[log] [0-13] [info] Uploading the file
-[log] [0-13] [success] Set text as - /home/circleci/project/test/test-data/integrations/schema/DHC/dhc.json on selector -  .import-by-file-container .drop-files-dropzone-container input
 [log] [0-13] [info] collection entity uploaded
 [log] [0-13] [success] Click success for - .import-modal__import-button
 [log] [0-13] [success] Click success for - .tabs__collection
@@ -1295,8 +1082,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-13]
 [log] [0-13] [success] Click success for - .tabs__api
 [log] [0-13] [success] Click success for - .import-collection-button
-[log] [0-13] [info] Uploading the file
-[log] [0-13] [success] Set text as - /home/circleci/project/test/test-data/integrations/schema/RUNSCOPE/runscope.json on selector -  .import-by-file-container .drop-files-dropzone-container input
 [log] [0-13] [info] collection entity uploaded
 [log] [0-13] [success] Click success for - .import-modal__import-button
 [log] [0-13] [success] Click success for - .tabs__collection
@@ -1309,8 +1094,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-13]
 [log] [0-13] [success] Click success for - .tabs__api
 [log] [0-13] [success] Click success for - .import-collection-button
-[log] [0-13] [info] Uploading the file
-[log] [0-13] [success] Set text as - /home/circleci/project/test/test-data/integrations/schema/WSDL/testImport.wsdl on selector -  .import-by-file-container .drop-files-dropzone-container input
 [log] [0-13] [success] Click success for - .import-modal__import-button
 [log] [0-15] [*****] .no-team-integrations__action .btn-primary does not exist
 [log] [0-14] [*****] .ci-cd-add-integrations-form__wrapper .integrations-add-card__alert does not exist
@@ -1342,8 +1125,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-14] [start] [current test]: should successfully delete CCI API Integration from API Builder
 [log] [0-14] [info] [file]: /home/circleci/project/test/specs/integrations/cci-integration.spec.js
 [log] [0-14]
-[log] [0-13] [info] Uploading the file
-[log] [0-13] [success] Set text as - /home/circleci/project/test/test-data/integrations/schema/WSDL/testImport2.wsdl on selector -  .import-by-file-container .drop-files-dropzone-container input
 [log] [0-14] [success] Click success for - .integration-options
 [log] [0-13] [success] Click success for - .import-modal__import-button
 [log] [0-14] [success] Click success for - .dropdown-menu .delete-option
@@ -1416,7 +1197,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-13] suite End - Validate basic flows of Importers functionality
 [log] [0-13]
 [log] [0-13] [info] temp users to be deleted: 1
-[log] [0-13] [info] temp user deletion initiated for id: 402292, Team name: pm-automation-tests-stage-enterprise13, Team id: 6298
 [log] [0-13] [log] Performance-Total results:
 [log] [0-13] [log] ┌─────────┐
 [log] [0-13] │ (index) │
@@ -1488,7 +1268,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-14] suite End - CCI Integration CRUD operations
 [log] [0-14]
 [log] [0-14] [info] temp users to be deleted: 1
-[log] [0-14] [info] temp user deletion initiated for id: 402293, Team name: pm-automation-tests-stage, Team id: 3438
 [log] [0-14] [log] Performance-Total results:
 [log] [0-14] [log] ┌─────────┐
 [log] [0-14] │ (index) │
@@ -1513,7 +1292,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-16] [debug] Successfully retrieved 20 items from DDB
 [log] [0-14] [log] 2022-02-17T22:21:28.996Z ERROR webdriver: Request failed with status 404 due to invalid session id: invalid session id
 [log] [0-15] [*****] .browse-integrations does not exist
-[log] [0-16] [success] user signup completed. created user id: 402303, name: test-user-41ad4e79-de37-4b83-88be-18467c41d270 in the team where admin username is:  pm-automation-tests-stage-enterprise18
 [log] [0-14] PASSED in chrome - /test/specs/integrations/cci-integration.spec.js
 [log] [0-17] [info] 🚀 Starting E2E test execution....
 [log] [0-17] [info] Electron port: 43911
@@ -1536,7 +1314,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-17] [info] user signup request initiated
 [log] [0-17] [debug] Successfully retrieved 20 items from DDB
 [log] [0-15] [*****] Unable to browse integrations button
-[log] [0-17] [success] user signup completed. created user id: 402307, name: test-user-36c0935a-2139-4569-8db6-ac0bbb581525 in the team where admin username is:  pm-automation-tests-stage-enterprise14
 [log] [0-17] [success] Click success for - div[class*="content-left-btn-signin"]
 [log] [0-16] [info] title found: Postman API Platform
 [log] [0-16] [success] Expected window found name:  Postman API Platform
@@ -1610,7 +1387,6 @@ Error: Browse integration list not displayed
 [log] [0-15] suite End - Keen Integration CRUD operations
 [log] [0-15]
 [log] [0-15] [info] temp users to be deleted: 1
-[log] [0-15] [info] temp user deletion initiated for id: 402294, Team name: pm-automation-tests-stage-enterprise06, Team id: 6195
 [log] [0-15] [log] Performance-Total results:
 [log] [0-15] [log] ┌─────────┐
 [log] [0-15] │ (index) │
@@ -1673,7 +1449,6 @@ Error: Browse integration list not displayed
 [log] [0-16] suite End - MS Teams Integration - Non Admin view
 [log] [0-16]
 [log] [0-16] [info] temp users to be deleted: 1
-[log] [0-16] [info] temp user deletion initiated for id: 402303, Team name: pm-automation-tests-stage-enterprise18, Team id: 6303
 [log] [0-16] [log] Performance-Total results:
 [log] [0-16] [log] ┌─────────┐
 [log] [0-16] │ (index) │
@@ -1701,7 +1476,6 @@ Error: Browse integration list not displayed
 [log] [0-17] [success] Successfully Validated team added integrations page
 [log] [0-16] [success] temp user deletion completed
 [log] [0-16] [log] 2022-02-17T22:22:20.656Z ERROR webdriver: Request failed with status 404 due to invalid session id: invalid session id
-[log] [0-18] [success] user signup completed. created user id: 402312, name: test-user-3d2ecc6b-5185-446f-918a-aad9c3269e65 in the team where admin username is:  pm-automation-tests-stage-enterprise18
 [log] [0-16] PASSED in chrome - /test/specs/integrations/msteams-integrations-non-admin.spec.js
 [log] [0-19] [info] 🚀 Starting E2E test execution....
 [log] [0-19] [info] Electron port: 40785
@@ -1723,7 +1497,6 @@ Error: Browse integration list not displayed
 [log] [0-19] [info] [suite file]: /home/circleci/project/test/specs/monitoring/monitor-create-tests/monitor-from-new-modal.spec.js
 [log] [0-19]
 [log] [0-19] [debug] Successfully retrieved 20 items from DDB
-[log] [0-19] [success] free user signup completed. created user id: 402313, email: freeUser-5cd3019d-ec82-49de-8869-65cb0d795090@postman.com
 [log] [0-19] [success] Click success for - div[class*="content-left-btn-signin"]
 [log] [0-17] [info] checking if other browse integrations button is available
 [log] [0-17] [success] Click success for - .browse-integrations
@@ -1911,7 +1684,6 @@ Error: Browse integration list not displayed
 [log] [0-17] suite End - Splunk Integration CRUD operations
 [log] [0-17]
 [log] [0-17] [info] temp users to be deleted: 1
-[log] [0-17] [info] temp user deletion initiated for id: 402307, Team name: pm-automation-tests-stage-enterprise14, Team id: 6299
 [log] [0-17] [log] Performance-Total results:
 [log] [0-17] [log] ┌─────────┐
 [log] [0-17] │ (index) │
@@ -2082,7 +1854,6 @@ Error: Configurations modal is not closed
 [log] [0-18] suite End - WebHooks Integration - Non Admin view
 [log] [0-18]
 [log] [0-18] [info] temp users to be deleted: 1
-[log] [0-18] [info] temp user deletion initiated for id: 402312, Team name: pm-automation-tests-stage-enterprise18, Team id: 6303
 [log] [0-18] [log] Performance-Total results:
 [log] [0-18] [log] ┌─────────┐
 [log] [0-18] │ (index) │
@@ -2139,7 +1910,6 @@ Error: Configurations modal is not closed
 [log] [0-22] [info] Electron arguments: --window-size=1920,1080 --no-sandbox --disable-infobars --disable-gpu --host=localhost --disable-dev-shm-usage --port=38903
 [log] [0-23] [info] Electron port: 40065
 [log] [0-23] [info] Electron arguments: --window-size=1920,1080 --no-sandbox --disable-infobars --disable-gpu --host=localhost --disable-dev-shm-usage --port=40065
-[log] [0-21] [success] free user signup completed. created user id: 402318, email: freeUser-1595ac45-9bc7-47d0-9501-702c3ee44b5b@postman.com
 [log] [0-21] [success] Click success for - div[class*="content-left-btn-signin"]
 [log] [0-23] [info] Browser: electron
 [log] [0-22] [info] Browser: electron
@@ -2176,7 +1946,6 @@ Error: Configurations modal is not closed
 [log] [0-22] RETRYING in chrome - /test/specs/runtime/examples.spec.js
 [log] [0-21] [info] title found: Postman
 [log] [0-21] [info] title found:
-[log] [0-23] [success] user signup completed. created user id: 402320, name: test-user-ccff3a99-22d3-4d78-bb2d-587591565997 in the team where admin username is:  pm-automation-tests-stage-enterprise16
 [log] [0-24] [info] 🚀 Starting E2E test execution....
 [log] [0-24] [info] Electron port: 36651
 [log] [0-24] [info] Electron arguments: --window-size=1920,1080 --no-sandbox --disable-infobars --disable-gpu --host=localhost --disable-dev-shm-usage --port=36651
@@ -3174,7 +2943,6 @@ no such window: no such window: window was already closed
 [log] [0-23] suite End - Tabs
 [log] [0-23]
 [log] [0-23] [info] temp users to be deleted: 1
-[log] [0-23] [info] temp user deletion initiated for id: 402320, Team name: pm-automation-tests-stage-enterprise16, Team id: 6301
 [log] [0-23] [log] Performance-Total *****: readFile failed: Error: ENOENT: no such file or directory, open 'performance-log.txt'
 [log] [0-23] [log] Performance-Total results:
 [log] [0-23] [log] ┌─────────┐
@@ -3189,7 +2957,6 @@ no such window: no such window: window was already closed
 [log] [0-23] RETRYING in chrome - /test/specs/runtime/tabs.spec.js
 [log] [0-26] [info] Browser: electron
 [log] [0-27] [info] 🚀 Starting E2E test execution....
-[log] [0-24] [success] user signup completed. created user id: 402324, name: test-user-bb79d22c-7253-41d7-a878-6b92dc2ae03f in the team where admin username is:  pm-automation-tests-stage-enterprise02
 [log] [0-27] [info] Electron port: 44011
 [log] [0-27] [info] Electron arguments: --window-size=1920,1080 --no-sandbox --disable-infobars --disable-gpu --host=localhost --disable-dev-shm-usage --port=44011
 [log] [0-26] [info] Test tags found: is:app
@@ -3204,7 +2971,6 @@ no such window: no such window: window was already closed
 [log] [0-27] [info] Environment: stage
 [log] [0-27] [info] Platform Used: CI
 [log] [0-27] [info] Setting chrome driver path for desktop app: /home/circleci/project/lib/driver/electronDriver/chromedriver
-[log] [0-24] [success] user signup completed. created user id: 402326, name: test-user-69054315-8643-4985-b03a-78383ebf5f3b in the team where admin username is:  pm-automation-tests-stage-enterprise02
 [log] [0-24] [log] 2022-02-17T22:26:53.223Z ERROR webdriver: Request failed with status 404 due to invalid session id: invalid session id
 [log] [0-24] [log] 2022-02-17T22:26:53.229Z ERROR webdriver: Request failed with status 404 due to invalid session id: invalid session id
 [log] [0-24] [log] 2022-02-17T22:26:53.234Z ERROR webdriver: Request failed with status 404 due to invalid session id: invalid session id
@@ -4675,7 +4441,6 @@ invalid session id: invalid session id
 [log] [0-24] suite End - CRUD Workspace Smoke Tests
 [log] [0-24]
 [log] [0-24] [info] temp users to be deleted: 2
-[log] [0-24] [info] temp user deletion initiated for id: 402324, Team name: pm-automation-tests-stage-enterprise02, Team id: 6042
 [log] [0-26] [log]
 [log] [0-26] **************************
 [log] [0-26]
@@ -4692,10 +4457,8 @@ invalid session id: invalid session id
 [log] [0-24] [debug] Successfully retrieved 1 items from DDB
 [log] [0-26] [debug] Successfully retrieved 20 items from DDB
 [log] [0-24] [success] temp user deletion completed
-[log] [0-24] [info] temp user deletion initiated for id: 402326, Team name: pm-automation-tests-stage-enterprise02, Team id: 6042
 [log] [0-24] [debug] Successfully retrieved 1 items from DDB
 [log] [0-28] [info] 🚀 Starting E2E test execution....
-[log] [0-26] [success] user signup completed. created user id: 402328, name: test-user-cae3b315-4546-4401-becc-05ad92415a9f in the team where admin username is:  pm-automation-tests-stage-enterprise02
 [log] [0-28] [info] Electron port: 46235
 [log] [0-28] [info] Electron arguments: --window-size=1920,1080 --no-sandbox --disable-infobars --disable-gpu --host=localhost --disable-dev-shm-usage --port=46235
 [log] [0-24] [success] temp user deletion completed
@@ -9534,7 +9297,6 @@ chrome not reachable: chrome not reachable
 [log] [0-26] suite End - Changelog - Collection Basic Auth Settings
 [log] [0-26]
 [log] [0-26] [info] temp users to be deleted: 1
-[log] [0-26] [info] temp user deletion initiated for id: 402328, Team name: pm-automation-tests-stage-enterprise02, Team id: 6042
 [log] [0-26] [log] Performance-Total *****: readFile failed: Error: ENOENT: no such file or directory, open 'performance-log.txt'
 [log] [0-26] [log] Performance-Total results:
 [log] [0-26] [log] ┌─────────┐
