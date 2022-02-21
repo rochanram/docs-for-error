@@ -635,7 +635,6 @@ Error: element (".requester-builder-header .requester-tabs-wrapper .requester-ta
 [log] [0-7] [success]
 [log] [0-7] suite End - Create Workspace Non Team User Tests
 [log] [0-7]
-[log] [0-7] [info] temp free user deletion initiated for id: 402261, User email: freeUser-b5033579-6fa7-4280-85bc-f48978774ec2@postman.com
 [log] [0-7] [log] Performance-Total results:
 [log] [0-7] [log] ┌─────────┐
 [log] [0-7] │ (index) │
@@ -649,7 +648,6 @@ Error: element (".requester-builder-header .requester-tabs-wrapper .requester-ta
 [log] [0-9]
 [log] [0-9] [info] user signup request initiated
 [log] [0-9] [debug] Successfully retrieved 20 items from DDB
-[log] [0-7] [success] Free user: freeUser-b5033579-6fa7-4280-85bc-f48978774ec2@postman.com is successfully deleted
 [log] [0-7] [success] temp free users deletion completed
 [log] [0-7] PASSED in chrome - /test/specs/collaboration/workspace-crud-tests/create-workspace-non-team-user.spec.js
 [log] [0-10] [info] 🚀 Starting E2E test execution....
@@ -883,7 +881,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-10] [success]
 [log] [0-10] suite End - Documentation in context bar
 [log] [0-10]
-[log] [0-10] [info] temp free user deletion initiated for id: 402277, User email: freeUser-39f34bff-7d2e-49b4-9bcc-9ab52eddacb9@postman.com
 [log] [0-10] [log] Performance-Total results:
 [log] [0-10] [log] ┌─────────┐
 [log] [0-10] │ (index) │
@@ -909,7 +906,6 @@ Error: .markdown-editor__textarea never appeared!
 [log] [0-9] ├─────────┤
 [log] [0-9] └─────────┘
 [log] [0-9] [debug] Successfully retrieved 1 items from DDB
-[log] [0-10] [success] Free user: freeUser-39f34bff-7d2e-49b4-9bcc-9ab52eddacb9@postman.com is successfully deleted
 [log] [0-10] [success] temp free users deletion completed
 [log] [0-10] RETRYING in chrome - /test/specs/documentation/contextbar-documentation.spec.js
 [log] [0-13] [info] 🚀 Starting E2E test execution....
@@ -1814,7 +1810,6 @@ Error: Configurations modal is not closed
 [log] [0-19] [success]
 [log] [0-19] suite End - Create monitors from 'Create New' modal Tests
 [log] [0-19]
-[log] [0-19] [info] temp free user deletion initiated for id: 402313, User email: freeUser-5cd3019d-ec82-49de-8869-65cb0d795090@postman.com
 [log] [0-18] [success] Add text as - testIntegrationName-09a8af on selector -  .integrations-add-card__input .input-field .input-box
 [log] [0-19] [log] Performance-Total results:
 [log] [0-19] [log] ┌─────────┐
@@ -1838,7 +1833,6 @@ Error: Configurations modal is not closed
 [log] [0-18] [success] Click success for - .integrations-run-actions__button--delete
 [log] [0-18] [success] Click success for - *[class='modal-footer'] *[class*='delete']
 [log] [0-18] [info] Checking if integration instances are present
-[log] [0-19] [success] Free user: freeUser-5cd3019d-ec82-49de-8869-65cb0d795090@postman.com is successfully deleted
 [log] [0-19] [success] temp free users deletion completed
 [log] [0-18] [success] Test Passed - Found created integration in added integrations page
 [log] [0-18] [log] Performance-Total: flushing to file: /home/circleci/project/test-reports/performance-results/performance-log.txt
@@ -1969,7 +1963,6 @@ no such window: no such window
 [log] [0-21] [success]
 [log] [0-21] suite End - Monitor collection and environment label checks
 [log] [0-21]
-[log] [0-21] [info] temp free user deletion initiated for id: 402318, User email: freeUser-1595ac45-9bc7-47d0-9501-702c3ee44b5b@postman.com
 [log] [0-21] [log] Performance-Total *****: readFile failed: Error: ENOENT: no such file or directory, open 'performance-log.txt'
 [log] [0-21] [log] Performance-Total results:
 [log] [0-21] [log] ┌─────────┐
@@ -2068,7 +2061,6 @@ no such window: no such window
 [log] [0-23]   (Session info: chrome=91.0.4472.164)
 [log] [0-23] [log] 2022-02-17T22:25:35.807Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: window was already closed
 [log] [0-23]   (Session info: chrome=91.0.4472.164)
-[log] [0-21] [success] Free user: freeUser-1595ac45-9bc7-47d0-9501-702c3ee44b5b@postman.com is successfully deleted
 [log] [0-21] [success] temp free users deletion completed
 [log] [0-23] [log] 2022-02-17T22:25:35.895Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: window was already closed
 [log] [0-23]   (Session info: chrome=91.0.4472.164)
